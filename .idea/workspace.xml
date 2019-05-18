@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48f5b83e-bf2a-432d-bc66-891382a51551" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/order.html" afterDir="false" />
-    </list>
+    <list default="true" id="48f5b83e-bf2a-432d-bc66-891382a51551" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -23,7 +19,7 @@
             <entry file="file://$PROJECT_DIR$/eco.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="266">
-                  <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+                  <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -32,7 +28,7 @@
             <entry file="file://$PROJECT_DIR$/client.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="546">
-                  <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+                  <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -98,9 +94,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="x" value="425" />
+    <option name="y" value="21" />
+    <option name="width" value="787" />
+    <option name="height" value="838" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -124,7 +121,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../К теме 2 для 07.05.2019/uspeh - form" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Курсы Успех. Проекты кейсов из учебника/Верстка Project coinMaker" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -157,16 +154,15 @@
       <option name="presentableId" value="Default" />
       <updated>1558164716064</updated>
       <workItem from="1558164717188" duration="696000" />
-      <workItem from="1558165452978" duration="3779000" />
+      <workItem from="1558165452978" duration="4967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4475000" />
+    <option name="totallyTimeSpent" value="5663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16280295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -201,7 +197,7 @@
     <entry file="file://$PROJECT_DIR$/eco.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -219,7 +215,7 @@
     <entry file="file://$PROJECT_DIR$/client.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
-          <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
         </state>
       </provider>
     </entry>
