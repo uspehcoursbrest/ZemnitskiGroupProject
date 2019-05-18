@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48f5b83e-bf2a-432d-bc66-891382a51551" name="Default Changelist" comment="" />
+    <list default="true" id="48f5b83e-bf2a-432d-bc66-891382a51551" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-BoldItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-BoldItalic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-BoldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-Extrabold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-Extrabold.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-Extrabold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-Extrabold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-ExtraboldItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-ExtraboldItalic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-ExtraboldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-ExtraboldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-Light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-SemiboldItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-SemiboldItalic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-SemiboldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSans-SemiboldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSansLight-Italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSansLight-Italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSansLight-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/OpenSansLight-Italic.woff" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -154,12 +179,12 @@
       <option name="presentableId" value="Default" />
       <updated>1558164716064</updated>
       <workItem from="1558164717188" duration="696000" />
-      <workItem from="1558165452978" duration="4967000" />
+      <workItem from="1558165452978" duration="5266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5663000" />
+    <option name="totallyTimeSpent" value="5962000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
