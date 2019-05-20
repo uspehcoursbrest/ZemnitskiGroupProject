@@ -1,43 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Корпоративным клиентам</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
 </head>
 <body>
-<div>
-    <lable for=""></lable>
-    <input type="text" id=""></div>
-<div>
-    <lable for=""></lable>
-    <input type="text" id=""></div>
-<div>
-    <lable for=""></lable>
-    <input type="text" id=""></div>
-<div>
+<!---->
+<form action="">
     <div>
-        <span></span>
-        <span></span>
+        <lable for="company">Название организации</lable>
+        <input type="text" name="company" id="company">
+    </div>
+    <div>
+        <lable for="man">Контактное лицо</lable>
+        <input type="text" name="man" id="man">
+    </div>
+    <div>
+        <lable for="phone">Номер телефона</lable>
+        <input type="text" name="phone" id="phone">
     </div>
     <div>
         <div>
-            <lable></lable>
-            <input type="radio">
-            <lable></lable>
-            <input type="radio">
+            <span>Нанесение логотипа</span>
+            <span>занимает 20 рабочих дней</span>
         </div>
         <div>
-            <lable></lable>
-            <input type="radio">
-            <lable></lable>
-            <input type="radio">
+            <lable for="yes">Да</lable>
+            <input type="radio" name="logo" id="yes" value="yes">
+            <lable for="no">Нет</lable>
+            <input type="radio" name="logo" id="no" value="no">
         </div>
+        <div>
+            <span>Прикрепите логотип</span>
+            <input type="file" name="" id="">
+            <span>.cdr, .ai, .eps, .tiff</span>
+        </div>
+        <div>
+            <lable for="figure">Колличество фигур</lable>
+            <select name="figure" id="figure">
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="150">150</option>
+            </select>
+        </div>
+        <div>
+            <lable name="timOrder">Подготовить заказ к</lable>
+            <input type="data" name="timOrder" id="timOrder">
+        </div>
+        <div>
+            <lable name="massage">Дополнительная информация</lable>
+            <textarea name="massage" id="massage"></textarea>
+        </div>
+        <input type="submit" value="Отправить">
     </div>
-    <div>
-        <input type="download">
-        <span></span>
-    </div>
-</div>
+</form>
 </body>
 </html>
