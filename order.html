@@ -4,73 +4,157 @@
     <meta charset="UTF-8">
     <title>Оформление заказа</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 </head>
 <body>
 <!--блок хэдер-->
 <header>
     <div class="container">
-        <div class="big">
-            <div class="loginMenu"></div>
-            <a class="logo" href="#" data-toogly="tooltip" title="На главную"><img src="img/logo.png" alt=""></a>
-
-            <div class="contacts"></div>
+        <div class="left">
+            <a href="#">
+                <span class="icon-man"></span>
+            </a>
+            <ul>
+                <li><a href="#">Оптовикам</a></li>
+                <li><a href="#">Корпоративным клиентам</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О мастерской</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="#">
+                <img src="" alt="">
+            </a>
+        </div>
+        <div class="right">
+            <a href="#">
+                <span class="icon-phone"></span>
+                <span>8 (495) 648-8-456</span>
+            </a>
+            <a href="#">Не дозвонились?</a>
+            <p>Мы работаем пн-пт
+                10:00 - 19:00</p>
+            <a href="#">
+                <span>товаров 5</span>
+                <span>на сумму 2550 ₽</span>
+            </a>
         </div>
     </div>
 </header>
+<!--начала основного контента-->
 <div class="content">
-    <div class="step"><span></span></div>
-    <div class="order"><span class="title"><span></span></span>
-        <div class="city"><span></span>
-            <form action=""></form>
-            <input type="text"></div>
+    <div class="step">
+        <span>Главная / Корзина / Оформление заказа</span>
     </div>
-    <div class="delivery"><span class="subtitle"></span>
-        <div class="deskription">
-            <item><input type="text"><span></span><span></span></item>
-            <item><input type="text"><span></span><span></span></item>
-            <item><input type="text"><span></span><span></span></item>
-            <item><input type="text"><span></span><span></span></item>
+    <form action="">
+        <div class="order">
+            <span class="title">Оформление заказа</span>
+            <div class="city">
+                <span>Выбор города </span>
+                <select name="city" id="city">
+                    <option value="">Москва, Московская обл., Россия</option>
+                </select>
+            </div>
         </div>
-    </div>
-    <div class="address"><span class="addresstitle"></span>
-        <div class="data"></div>
-    </div>
-    <!--блок подвала-->
-    <footer>
-        <div class="container">
+        <div class="delivery">
+            <span class="subtitle">Способ доставки</span>
+            <div class="deskription">
+                <!--            сделать radio-->
+                <input type="radio" name="get">
+                <span>Доставка курьерской службой по Москве и МО (IM Logistics)   0 р.</span>
+                <span>Заказ оформленный: - до 16:00 будет доставлен на следующий рабочий день; - после 16:00 будет доставлен через один рабочий день;</span>
+                <input type="radio" name="get">
+                <span>Экспресс-доставка   450 р.</span>
+                <span>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах МКАД. Доставка осуществляется только по предоплате. Услуга "товары на выбор" при данном типе доставки недоступна.</span>
+                <input type="radio" name="get">
+                <span>Доставить в подарок 450 р.</span>
+                <span>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка осуществляется только по предоплате.</span>
+                <span>Дополнительная услуга — подарочная упаковка</span>
+                <input type="radio" name="get">
+                <span>Самовывоз из пункта выдачи заказов   0 р.</span>
+                <span>1-2 рабочих дня.</span>
+            </div>
+        </div>
+        <div class="address">
+            <span class="addresstitle">Адрес доставки</span>
+            <div class="data">
+                <label for="street">Улица*</label>
+                <input type="text" id="street" name="street">
+                <label for="district">Район*</label>
+                <input type="text" id="district" name="district">
+                <label for="home">Дом*</label>
+                <input type="text" id="home" name="home">
+                <label for="duild">Корпус*</label>
+                <input type="text" id="duild" name="duild">
+                <label for="place">Квартира/Офис*</label>
+                <input type="text" id="place" name="place">
+                <label for="extra">Дополнительно (номер домофона, номер офиса и тд.)</label>
+                <textarea id="extra" name="extra"></textarea>
+            </div>
+        </div>
+        <div class="payment">
+            <input type="radio" name="pay">
+            <span>Оплата при получении</span>
+            <span>Вы сможете оплатить стоимость заказа наличными при получении заказа от курьера.</span>
+            <input type="radio" name="pay">
+            <span>Оплата электронным способом (Робокасса)</span>
+            <span>Банковская карта, WebMoney, Яндекс Деньги, QIWI и т.д.</span>
+        </div>
+        <div class="person">
+            <span class="title"></span>
+            <div class="datapersen">
+                <label for="name">Имя*</label>
+                <input type="text" id="name">
+                <label for="mail">Электронная почта*</label>
+                <input type="text" id="mail">
+                <label for="phone">Номер телефона*</label>
+                <input type="text" id="phone">
+                <button>Продолжить</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+<!--блок подвала-->
+<footer>
+    <div class="container">
+        <div>
             <ul>
                 <li>
                     <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a href="#">Оптовикам</a></li>
+                        <li><a href="#">Корпоративным клиентам</a></li>
+                        <li><a href="#">Войти в личный кабинет</a></li>
                     </ul>
                 </li>
                 <li>
                     <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">О мастерской</a></li>
+                        <li><a href="#">Контакты</a></li>
                     </ul>
                 </li>
             </ul>
             <div>
-                <a href=""></a>
-                <a href=""></a>
-                <span></span>
-                <span></span>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+                <a href="#">8 (945) 648-8-456</a>
+                <a href="#">ecocheloveki@gmail.com</a>
+                <span>пн-пт 10:00 - 19:00</span>
+                <span>Ищите нас здесь</span>
+                <a href="#"><span class="icon-vk"></span></a>
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-facebook2"></span></a>
             </div>
             <div>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span><a href=""></a></span>
+                <span>© 2011-2014 Экочеловечки</span>
+                <span>Все права защищены</span>
+                <span>Все цены указаны в рублях</span>
+                <span>Разработка
+                        <a href="#">«Биат»</a>
+                    </span>
             </div>
         </div>
-    </footer>
-</div>
+    </div>
+</footer>
 </body>
 </html>
