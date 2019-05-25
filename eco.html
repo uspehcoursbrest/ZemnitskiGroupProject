@@ -6,16 +6,17 @@
     <title>Eco</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!--Хэдэр-->
 <header>
     <div class="container">
         <div class="left">
-            <a href="#">
+            <a href="#" class="login">
                 <span class="icon-man"></span>
             </a>
-            <ul>
+            <ul class="menu">
                 <li><a href="#">Оптовикам</a></li>
                 <li><a href="#">Корпоративным клиентам</a></li>
                 <li><a href="#">Доставка и оплата</a></li>
@@ -29,16 +30,16 @@
             </a>
         </div>
         <div class="right">
-            <a href="#">
+            <a href="#" class="tel">
                 <span class="icon-phone"></span>
                 <span>8 (495) 648-8-456</span>
             </a>
-            <a href="#">Не дозвонились?</a>
-            <p>Мы работаем пн-пт
+            <a href="#" class="noCall">Не дозвонились?</a>
+            <p class="time">Мы работаем пн-пт
                 10:00 - 19:00</p>
-            <a href="#">
-                <span>товаров 5</span>
-                <span>на сумму 2550 ₽</span>
+            <a href="#" class="basket">
+                <span>товаров </span>5
+                <span> на сумму </span>2550 ₽
             </a>
         </div>
     </div>
@@ -48,8 +49,8 @@
     <div class="content">
         <!--Баннер-->
         <div class="banner">
-            <div class="sale"></div>
-            <div class="slider"></div>
+            <div class="left"></div>
+            <div class="right"></div>
         </div>
         <!--Преимущества и подписка-->
         <div class="advSub">
@@ -80,7 +81,7 @@
                     <label for="sub">Узнавайте о новинках первыми!</label>
                     <input type="email" name="email" id="sub" placeholder="Введите ваш e-mail" required>
                     <div>
-                        <button>Подписаться на рассылку</button>
+                        <button class="btn  btnGreen">Подписаться на рассылку</button>
                         <span>Обещаем НЕ спамить</span>
                     </div>
                 </form>
@@ -88,8 +89,8 @@
         </div>
         <!--Каталог-->
         <div class="catalog">
-            <div>
-                <ul>
+            <div class="top">
+                <ul class="catalogMenu">
                     <li><a href="#">Все</a></li>
                     <li><a href="#">Хиты</a></li>
                     <li><a href="#">Новинки</a></li>
@@ -100,217 +101,217 @@
                     <li><a href="#">Любимой</a></li>
                     <li><a href="#">Лучшему другу</a></li>
                 </ul>
-                <div>
+                <div class="catalogSetting">
                     <span></span>
                     <span></span>
                 </div>
             </div>
-            <div>
+            <div class="cards">
                 <!--1-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
                         <span>Экочеловек</span>
                         <a href="#">«Танцор»</a>
                         <div>
-                            <span>690</span>
-                            <span>550 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--2-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Экочеловек </span>
-                        <a href="#">«Коротыш»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>950</span>
-                            <span>850 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--3-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Экочеловек </span>
-                        <a href="#">«Мечтатель в черном»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>1710</span>
-                            <span>1500 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--4-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Экочеловек </span>
-                        <a href="#">«Лентяй»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>610</span>
-                            <span>590 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--5-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span></span>
-                        <a href="#">«Вулкан»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>690</span>
-                            <span>550 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--6-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Набор</span>
-                        <a href="#">«Совушки»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>950</span>
-                            <span>850 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--7-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Набор </span>
-                        <a href="#">«Три обезьянки»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>1710</span>
-                            <span>1500 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--8-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Набор весенний</span>
-                        <a href="#">«Три сердца»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>610</span>
-                            <span>590 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--9-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
                         <span>Экочеловек</span>
                         <a href="#">«Танцор»</a>
                         <div>
-                            <span>690</span>
-                            <span>550 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--10-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Экочеловек </span>
-                        <a href="#">«Малыш»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>950</span>
-                            <span>850 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--11-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Экочеловек </span>
-                        <a href="#">«Мечтатель»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>1710</span>
-                            <span>1500 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--12-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Экочеловек </span>
-                        <a href="#">«Йог»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>610</span>
-                            <span>590 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--13-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Экочеловек </span>
-                        <a href="#">«Атлет»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>690</span>
-                            <span>550 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--14-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Экочеловек </span>
-                        <a href="#">«Беременяша»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>950</span>
-                            <span>850 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--15-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Экочеловек </span>
-                        <a href="#">«Романтик»</a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>1710</span>
-                            <span>1500 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
                 <!--16-->
                 <div class="card">
-                    <div></div>
+                    <div class="photo"></div>
                     <div>
-                        <span>Экочеловек </span>
-                        <a href="#"></a>
+                        <span>Экочеловек</span>
+                        <a href="#">«Танцор»</a>
                         <div>
-                            <span>610</span>
-                            <span>590 ₽</span>
-                            <button>В корзину</button>
+                            <span class="old">690</span>
+                            <span class="new">550 ₽</span>
+                            <button class="btn btnOrang">В корзину</button>
                         </div>
                     </div>
                 </div>
@@ -327,15 +328,15 @@
         </div>
         <!--Инфо-->
         <div class="info">
-            <ul>
+            <ul class="tabs">
                 <li><a href="#">Интернет-магазин керамических фигурок</a></li>
                 <li><a href="#">Керамические фигурки</a></li>
                 <li><a href="#">Подарки на новый год</a></li>
                 <li><a href="#">Подарок на день рождения</a></li>
             </ul>
-            <div>
+            <div class="acardion">
                 <span>Интернет магазин керамических фигурок — красота и удобство</span>
-                <div>
+                <div class="bottom">
                     <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
                         оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в интерьере,
                         дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет магазин
@@ -354,10 +355,10 @@
                         натуральные, качественные материалы, создающие идеальные условия для выращивания травы и
                         различных цветов.</p>
                 </div>
-                <span>Интернет магазин керамических фигурок — сочетание простоты и удобства</span>
             </div>
-            <div>
-                <div>
+            <div class="acardion">
+                <span>Интернет магазин керамических фигурок — сочетание простоты и удобства</span>
+                <div class="bottom">
                     <p></p>
                     <p></p>
                     <p></p>
@@ -370,7 +371,7 @@
 <footer>
     <div class="container">
         <div>
-            <ul>
+            <ul class="menu">
                 <li>
                     <ul>
                         <li><a href="#">Оптовикам</a></li>
@@ -391,9 +392,11 @@
                 <a href="#">ecocheloveki@gmail.com</a>
                 <span>пн-пт 10:00 - 19:00</span>
                 <span>Ищите нас здесь</span>
-                <a href="#"><span class="icon-vk"></span></a>
-                <a href="#"><span class="icon-twitter"></span></a>
-                <a href="#"><span class="icon-facebook2"></span></a>
+                <div class="social">
+                    <a href="#"><span class="icon-vk"></span></a>
+                    <a href="#"><span class="icon-twitter"></span></a>
+                    <a href="#"><span class="icon-facebook2"></span></a>
+                </div>
             </div>
             <div>
                 <span>© 2011-2014 Экочеловечки</span>
