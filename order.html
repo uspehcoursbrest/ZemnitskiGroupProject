@@ -50,36 +50,36 @@
     </div>
     <form action="">
         <div class="order">
-            <span class="title">Оформление заказа</span>
-            <div class="city">
-                <span>Выбор города </span>
+            <h2 class="title">Оформление заказа</h2>
+            <div class="city selectio">
+                <label for="city">Выбор города </label>
                 <select name="city" id="city">
                     <option value="">Москва, Московская обл., Россия</option>
                 </select>
             </div>
         </div>
         <div class="delivery">
-            <span class="subtitle">Способ доставки</span>
-            <div class="deskription">
+            <span class="subtitle titleText">Способ доставки</span>
+            <div class="deskription selectio">
                 <!--            сделать radio-->
-                <input type="radio" name="get">
+                <input type="radio" name="get" id="1">
                 <span>Доставка курьерской службой по Москве и МО (IM Logistics)   0 р.</span>
                 <span>Заказ оформленный: - до 16:00 будет доставлен на следующий рабочий день; - после 16:00 будет доставлен через один рабочий день;</span>
-                <input type="radio" name="get">
+                <input type="radio" name="get" id="2">
                 <span>Экспресс-доставка   450 р.</span>
                 <span>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах МКАД. Доставка осуществляется только по предоплате. Услуга "товары на выбор" при данном типе доставки недоступна.</span>
-                <input type="radio" name="get">
+                <input type="radio" name="get" id="3">
                 <span>Доставить в подарок 450 р.</span>
                 <span>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка осуществляется только по предоплате.</span>
                 <span>Дополнительная услуга — подарочная упаковка</span>
-                <input type="radio" name="get">
+                <input type="radio" name="get" id="4">
                 <span>Самовывоз из пункта выдачи заказов   0 р.</span>
                 <span>1-2 рабочих дня.</span>
             </div>
         </div>
         <div class="address">
-            <span class="addresstitle">Адрес доставки</span>
-            <div class="data">
+            <span class="addresstitle titleText">Адрес доставки</span>
+            <div class="data selectio">
                 <label for="street">Улица*</label>
                 <input type="text" id="street" name="street">
                 <label for="district">Район*</label>
@@ -94,16 +94,16 @@
                 <textarea id="extra" name="extra"></textarea>
             </div>
         </div>
-        <div class="payment">
-            <input type="radio" name="pay">
+        <div class="payment selectio">
+            <input type="radio" name="pay" id="5">
             <span>Оплата при получении</span>
             <span>Вы сможете оплатить стоимость заказа наличными при получении заказа от курьера.</span>
-            <input type="radio" name="pay">
+            <input type="radio" name="pay" id="6">
             <span>Оплата электронным способом (Робокасса)</span>
             <span>Банковская карта, WebMoney, Яндекс Деньги, QIWI и т.д.</span>
         </div>
         <div class="person">
-            <span class="title"></span>
+            <span class="title titleText"">Способ оплаты</span>
             <div class="datapersen">
                 <label for="name">Имя*</label>
                 <input type="text" id="name">
