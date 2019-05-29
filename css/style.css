@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Open Sans";
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.container {
+    width: 1010px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+header .login {
+    font-size: 13px;
+    line-height: 18px;
+    color: #0069b4;
+}
+header .menu a {
+    font-size: 13px;
+    line-height: 28px;
+    color: #333333;
+}
+header .tel {
+    font-size: 20px;
+    line-height: 20px;
+    color: #333333;
+    text-decoration: none;
+}
+header .noCall {
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #0069b4;
+    border-bottom: 1px dashed #0069b4;
+}
+header .time {
+    font-size: 13px;
+    line-height: 19px;
+    color: #999999;
+}
+header .basket {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+    text-decoration: none;
+}
+header .basket span {
+    color: #caebd4;
+}
+header [class*="icon"] {
+    color: #caebd4;
+}
+header .login [class*="icon"] {
+    font-size: 18px;
+}
+header .tel [class*="icon"] {
+    font-size: 20px;
+}
+.advantages .item span {
+    font-size: 41px;
+    font-weight: bold;
+    line-height: 17px;
+    color: #333333;
+}
+.advantages .item p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #666666;
+}
+.subscribe label {
+    font-size: 16px;
+    color: #ffffff;
+}
+.subscribe input {
+    font-size: 13px;
+    line-height: 37px;
+    color: #999999;
+}
+.subscribe button {
+    font-size: 13px;
+    line-height: 37px;
+    text-align: center;
+    color: #ffffff;
+}
+.subscribe .wrap span {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+}
+.f
