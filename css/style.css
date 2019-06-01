@@ -162,3 +162,38 @@ footer a {
 footer a.soc {
     font-size: 21px;
 }
+
+/*стилизация страницы order - Оформление заказа*/
+
+.content .order h2 {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+.content .order .city {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: #666666;
+}
+.content .order select {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #666666;
+}
+.delivery .subtitle {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+.deskription span {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+/*продолжить стилизицию с способа доставки*/
