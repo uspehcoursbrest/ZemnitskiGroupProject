@@ -223,6 +223,7 @@ footer a.soc {
 footer {
     background-color: #64ba4a;
 }
+/*назначить дивам классы в подвале*/
 footer > div > div > ul {
     width: 50%;
     float: left;
@@ -255,18 +256,78 @@ footer > div > div > div {
     color: #666666;
 }
 
-.delivery .subtitle {
+.delivery .deskription span, .delivery .deskription li{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #666666;
+}
+.delivery .deskription .bigText{
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #666666;
+}
+.delivery .selectio .colorText {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ff6633;
+}
+.address .addresstitle {
     font-size: 15px;
     line-height: 22px;
-    font-weight: 600;
+    font-weight: 400;
+    color: #333333;
+}
+.address .data label {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: #666666;
+}
+.address .data label span {
+    color: #ff3333;
+}
+.titleText {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
     color: #333333;
 }
 
-.desCription span {
+.payment span {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #666666;
+}
+.payment .bigText {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #666666;
+}
+.payment .titleText {
     font-size: 15px;
     line-height: 22px;
-    font-weight: 600;
+    font-weight: 400;
     color: #333333;
 }
-
-/*продолжить стилизицию с способа доставки*/
+.person label {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: #666666;
+}
+.person .datapersen label span {
+    color: #ff3333;
+}
+.person button {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #ffffff;
+}

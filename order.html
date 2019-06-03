@@ -62,59 +62,62 @@
         <div class="delivery">
             <span class="subtitle titleText">Способ доставки</span>
             <div class="deskription selectio">
-                <!--            сделать radio-->
                 <input type="radio" name="get" id="1">
-                <span>Доставка курьерской службой по Москве и МО (IM Logistics)   0 р.</span>
-                <span>Заказ оформленный: - до 16:00 будет доставлен на следующий рабочий день; - после 16:00 будет доставлен через один рабочий день;</span>
+                <span class="bigText">Доставка курьерской службой по Москве и МО (IM Logistics) 0 р.</span>
+                <span>Заказ оформленный:</span>
+                <ul>
+                    <li>до 16:00 будет доставлен на следующий рабочий день;</li>
+                    <li>после 16:00 будет доставлен через один рабочий день;</li>
+                </ul>
                 <input type="radio" name="get" id="2">
-                <span>Экспресс-доставка   450 р.</span>
+                <span class="bigText">Экспресс-доставка   450 р.</span>
                 <span>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах МКАД. Доставка осуществляется только по предоплате. Услуга "товары на выбор" при данном типе доставки недоступна.</span>
                 <input type="radio" name="get" id="3">
-                <span>Доставить в подарок 450 р.</span>
+                <span class="bigText">Доставить в подарок 450 р.</span>
                 <span>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка осуществляется только по предоплате.</span>
-                <span>Дополнительная услуга — подарочная упаковка</span>
+                <span class="colorText">Дополнительная услуга — подарочная упаковка</span>
                 <input type="radio" name="get" id="4">
-                <span>Самовывоз из пункта выдачи заказов   0 р.</span>
+                <span class="bigText">Самовывоз из пункта выдачи заказов   0 р.</span>
                 <span>1-2 рабочих дня.</span>
             </div>
         </div>
         <div class="address">
             <span class="addresstitle titleText">Адрес доставки</span>
             <div class="data selectio">
-                <label for="street">Улица*</label>
+                <label for="street">Улица<span>*</span></label>
                 <input type="text" id="street" name="street">
-                <label for="district">Район*</label>
+                <label for="district">Район<span>*</span></label>
                 <input type="text" id="district" name="district">
-                <label for="home">Дом*</label>
+                <label for="home">Дом<span>*</span></label>
                 <input type="text" id="home" name="home">
-                <label for="duild">Корпус*</label>
+                <label for="duild">Корпус<span>*</span></label>
                 <input type="text" id="duild" name="duild">
-                <label for="place">Квартира/Офис*</label>
+                <label for="place">Квартира/Офис<span>*</span></label>
                 <input type="text" id="place" name="place">
                 <label for="extra">Дополнительно (номер домофона, номер офиса и тд.)</label>
                 <textarea id="extra" name="extra"></textarea>
             </div>
         </div>
         <div class="payment selectio">
+            <span class="title titleText">Способ оплаты</span>
             <input type="radio" name="pay" id="5">
-            <span>Оплата при получении</span>
+            <span class="bigText">Оплата при получении</span>
             <span>Вы сможете оплатить стоимость заказа наличными при получении заказа от курьера.</span>
             <input type="radio" name="pay" id="6">
-            <span>Оплата электронным способом (Робокасса)</span>
+            <span class="bigText">Оплата электронным способом (Робокасса)</span>
             <span>Банковская карта, WebMoney, Яндекс Деньги, QIWI и т.д.</span>
         </div>
         <div class="person">
             <span class="title titleText">Способ оплаты</span>
             <div class="datapersen">
-                <label for="name">Имя*</label>
+                <label for="name">Имя<span>*</span></label>
                 <input type="text" id="name">
-                <label for="mail">Электронная почта*</label>
+                <label for="mail">Электронная почта<span>*</span></label>
                 <input type="text" id="mail">
-                <label for="phone">Номер телефона*</label>
+                <label for="phone">Номер телефона<span>*</span></label>
                 <input type="text" id="phone">
-                <button>Продолжить</button>
             </div>
-
+            <button>Продолжить</button>
         </div>
     </form>
 </div>
