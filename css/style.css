@@ -23,6 +23,25 @@ ul {
     padding: 0 15px;
 }
 
+.topLine {
+    display: table;
+    width: 100%;
+}
+
+.topLine > div {
+    display: table-cell;
+    width: 33%;
+    vertical-align: top;
+}
+
+.logo {
+    text-align: center;
+}
+
+.topLine .right {
+    text-align: right;
+}
+
 header .login {
     font-size: 13px;
     line-height: 18px;
@@ -61,7 +80,7 @@ header .basket {
     line-height: 22px;
     color: #caebd4;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     padding-left: 28px;
     background-repeat: no-repeat;
     background-position: left center;
@@ -88,35 +107,62 @@ header .logo img {
     width: 155px;
 }
 
+.banner .left {
+    height: 365px;
+    width: 305px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner .right {
+    height: 365px;
+    width: 640px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
 .advantages .item span {
     font-size: 41px;
     font-weight: bold;
     line-height: 17px;
     color: #333333;
 }
+
 /*блок преимуществ*/
 .subscribe {
     width: 320px;
     float: left;
 }
+
 .advantages {
     width: calc(100% - 320px);
     float: left;
 }
-.clear::after{
+
+.clear::after {
     content: "";
     display: block;
     clear: both;
 }
+
 .advantages .item p {
     font-size: 12px;
     line-height: 14px;
     color: #666666;
 }
+
 .advantages .item img {
     width: 40px;
     height: 40px;
 }
+
 .subscribe label {
     font-size: 16px;
     color: #ffffff;
@@ -129,10 +175,26 @@ header .logo img {
 }
 
 .subscribe button {
+    display: table-cell;
+    vertical-align: middle;
+    width: 188px;
     font-size: 13px;
     line-height: 37px;
     text-align: center;
     color: #ffffff;
+    background-color: #259c47;
+    border: none;
+}
+
+.subscribe .wrap span {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.subscribe {
+    background-color: #64ba4a;
 }
 
 .catalogMenu li {
@@ -144,6 +206,33 @@ header .logo img {
 .catalogMenu li a {
     text-decoration: none;
     color: #666666;
+}
+
+.card {
+    position: relative;
+}
+
+.status {
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: -3px;
+    width: 43px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.status.hit {
+    background-color: #6eddcc;
+}
+
+.status.discount {
+    background-color: #ffed03;
+}
+
+.status.new {
+    background-color: #78ec71;
 }
 
 .cards .card {
@@ -195,6 +284,11 @@ header .logo img {
     color: #999999;
 }
 
+.subscribe .wrap {
+    display: table;
+    width: 100%;
+}
+
 .info .content {
     font-size: 12px;
     line-height: 18px;
@@ -223,15 +317,19 @@ footer a.soc {
 footer {
     background-color: #64ba4a;
 }
+
 /*назначить дивам классы в подвале*/
 footer > div > div > ul {
     width: 50%;
     float: left;
 }
+
 footer > div > div > div {
     width: 25%;
     float: left;
 }
+
+
 /*стилизация страницы order - Оформление заказа*/
 
 .content .order h2 {
@@ -256,30 +354,34 @@ footer > div > div > div {
     color: #666666;
 }
 
-.delivery .deskription span, .delivery .deskription li{
+.delivery .deskription span, .delivery .deskription li {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
     color: #666666;
 }
-.delivery .deskription .bigText{
+
+.delivery .deskription .bigText {
     font-size: 13px;
     line-height: 19px;
     font-weight: 400;
     color: #666666;
 }
+
 .delivery .selectio .colorText {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
     color: #ff6633;
 }
+
 .address .addresstitle {
     font-size: 15px;
     line-height: 22px;
     font-weight: 400;
     color: #333333;
 }
+
 .address .data label {
     font-size: 13px;
     line-height: 22px;
@@ -287,9 +389,11 @@ footer > div > div > div {
     font-style: italic;
     color: #666666;
 }
+
 .address .data label span {
     color: #ff3333;
 }
+
 .titleText {
     font-size: 15px;
     line-height: 22px;
@@ -303,18 +407,21 @@ footer > div > div > div {
     font-weight: 400;
     color: #666666;
 }
+
 .payment .bigText {
     font-size: 13px;
     line-height: 19px;
     font-weight: 400;
     color: #666666;
 }
+
 .payment .titleText {
     font-size: 15px;
     line-height: 22px;
     font-weight: 400;
     color: #333333;
 }
+
 .person label {
     font-size: 13px;
     line-height: 22px;
@@ -322,19 +429,35 @@ footer > div > div > div {
     font-style: italic;
     color: #666666;
 }
+
 .person .datapersen label span {
     color: #ff3333;
 }
+
 .person button {
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
     color: #ffffff;
 }
+
 .cards .photo {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 220px;
     height: 220px;
+}
+
+.catalogMenu li {
+    display: inline-block;
+}
+
+.catalogMenu li + li {
+    margin-right: 18px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 18px;
 }
