@@ -331,3 +331,10 @@ footer > div > div > div {
     font-weight: 400;
     color: #ffffff;
 }
+.cards .photo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 220px;
+    height: 220px;
+}
