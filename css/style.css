@@ -23,6 +23,24 @@ ul {
     padding: 0 15px;
 }
 
+.invisLink {
+    position: relative;
+    z-index: 1;
+}
+
+.invisLink > a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+
 .topLine {
     display: table;
     width: 100%;
@@ -235,10 +253,23 @@ header .logo img {
     background-color: #78ec71;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+
+}
+
+
 .cards .card {
     font-size: 15px;
     line-height: 22px;
     color: #333333;
+}
+
+.card {
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 9px;
 }
 
 .card a {
@@ -299,6 +330,23 @@ header .logo img {
     text-transform: uppercase;
 }
 
+.acardion .title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -2px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333333;
+}
+.acardion .title {
+    padding-left: 25px;
+    position: relative;
+}
+
 footer {
     font-size: 13px;
     line-height: 22px;
@@ -331,6 +379,62 @@ footer > div > div > div {
 
 
 /*стилизация страницы order - Оформление заказа*/
+
+.orderList li {
+    padding-left: 40px;
+}
+
+.orderList label {
+    position: relative;
+    padding-left: 40px;
+    margin-left: -40px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.radioBtn {
+    display: none;
+}
+
+.radioBtn:not(checked) + label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.radioBtn:not(checked) + label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    background-color: #51bf87;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.radioBtn:checked + label::before {
+    border-color: #51bf87;
+}
+
+.radioBtn:checked + label::after {
+    opacity: 1;
+}
+
+.radioBtn + label {
+    cursor: pointer;
+}
 
 .content .order h2 {
     font-size: 25px;
