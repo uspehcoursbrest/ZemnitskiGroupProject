@@ -342,6 +342,7 @@ header .logo img {
     border-right: 5px solid transparent;
     border-top: 5px solid #333333;
 }
+
 .acardion .title {
     padding-left: 25px;
     position: relative;
@@ -385,6 +386,19 @@ footer > div > div > div {
 }
 
 .orderList label {
+    position: relative;
+    padding-left: 40px;
+    margin-left: -40px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.paymentBlock li {
+    padding-left: 40px;
+}
+
+.paymentBlock label {
     position: relative;
     padding-left: 40px;
     margin-left: -40px;
@@ -564,4 +578,158 @@ footer > div > div > div {
 .menu li {
     display: inline-block;
     margin-left: 18px;
+}
+
+/*позиционирование страницы order.html*/
+
+.contentOrder .step span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #999999;
+}
+.contentOrder .step {
+    height: 30px;
+    width: 1010px;
+    border-top: 1px solid #e4e4e4;
+}
+.headContentOrder {
+    height: 130px;
+    width: 1010px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.headContentOrder .title {
+    font-size: 25px;
+    line-height: 60px;
+    color: #333333;
+    font-weight: normal;
+}
+.headContentOrder * {
+    display: block;
+}
+.headContentOrder label {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 22px;
+    color: #666666;
+}
+.headContentOrder select {
+    font-size: 13px;
+    line-height: 30px;
+    padding-left: 10px;
+    font-weight: normal;
+    color: #333333;
+    height: 30px;
+    width: 290px;
+    border: 1px solid #d6d6d6;
+}
+.delivery {
+    height: 410px;
+    width: 1010px;
+    border-bottom: 1px solid #e4e4e4;
+    padding-top: 20px;
+}
+.titleText {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #333333;
+}
+.orderList {
+    margin-top: 15px;
+    width: 465px;
+}
+.orderList p {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #666666;
+}
+.orderList li + li {
+    margin-top: 20px;
+}
+.contentOrder .address {
+    height: 410px;
+    width: 1010px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.curerOrder {
+    width: 295px;
+}
+.curerOrder .selectio input, .curerOrder .selectio label {
+    display: block;
+}
+.curerOrder .selectio input[name="street"],
+.curerOrder .selectio input[name="district"],
+.curerOrder .selectio textarea {
+    width: 290px;
+}
+.curerOrder .selectio textarea {
+    height: 100px;
+    border: 1px solid #d6d6d6;
+}
+.curerOrder .selectio input[name="home"],
+.curerOrder .selectio input[name="duild"] {
+    width: 60px;
+    margin-right: 30px;
+}
+.curerOrder .selectio input {
+    height: 30px;
+    border: 1px solid #d6d6d6;
+    margin-bottom: 10px;
+}
+.curerOrder .selectio input[name="place"] {
+    width: 100px;
+}
+.curerOrder .house > div {
+    display: inline-block;
+}
+.curerOrder .selectio {
+    margin-top: 20px;
+}
+.paymentBlock {
+    height: 190px;
+    width: 1010px;
+    border-top: 1px solid #e4e4e4;
+    padding-top: 20px;
+}
+.paymentBlock ul {
+    margin-top: 20px;
+}
+.paymentBlock li + li {
+    margin-top: 15px;
+}
+.paymentBlock p {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #666666;
+}
+.contentOrder .person {
+    height: 360px;
+    width: 1010px;
+    border-top: 1px solid #e4e4e4;
+    padding-top: 20px;
+}
+.contentOrder .datapersen label,
+.contentOrder .datapersen input {
+    display: block;
+}
+.contentOrder .datapersen input {
+    height: 30px;
+    width: 290px;
+    border: 1px solid #d6d6d6;
+    margin-bottom: 10px;
+}
+.contentOrder .datapersen {
+    margin-top: 20px;
+}
+.contentOrder .person button {
+    height: 30px;
+    width: 190px;
+    background-color: #ea5b0c;
+    border: 0;
+    margin-top: 20px;
 }
