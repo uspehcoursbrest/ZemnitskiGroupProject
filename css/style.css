@@ -61,6 +61,7 @@ ul {
 }
 header {
     border-top: 8px solid #63b949;
+    margin-bottom: 20px;
 }
 header .topLine {
     margin-top: 20px;
@@ -100,6 +101,7 @@ a:hover .icon-man {
 .catalogMenu a:hover {
     border-bottom: none;
 }
+
 header .tel {
     font-size: 20px;
     line-height: 20px;
@@ -172,15 +174,35 @@ header .logo img {
 .banner {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
+.advSub {
+    margin-bottom: 20px;
+}
+.advantages .item {
+    width: 22%;
+    display: inline-block;
 
+}
+.advantages .item {
+    vertical-align: top;
+}
+.advantages .item + .item {
+    margin-left: 15px;
+}
+.advantages .item > * {
+    display: block;
+}
 .advantages .item span {
-    font-size: 41px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 17px;
     color: #333333;
+    width: 70%;
 }
-
+.advantages .item p {
+    width: 75%;
+}
 /*блок преимуществ*/
 .subscribe {
     width: 320px;
@@ -218,12 +240,15 @@ header .logo img {
     font-size: 13px;
     line-height: 37px;
     color: #999999;
+    height: 35px;
+    width: 280px;
 }
 
 .subscribe button {
     display: table-cell;
     vertical-align: middle;
     width: 188px;
+    height: 35px;
     font-size: 13px;
     line-height: 37px;
     text-align: center;
@@ -241,8 +266,14 @@ header .logo img {
 
 .subscribe {
     background-color: #64ba4a;
+    width: 320px;
+    height: 160px;
+    padding-left: 15px;
 }
 
+.catalogMenu {
+    margin-bottom: 20px;
+}
 .catalogMenu li {
     font-size: 13px;
     line-height: 16px;
