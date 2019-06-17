@@ -1,0 +1,734 @@
+<!--Косяк с иконками, сделать мигающую кнопку-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГлавнаяЭко</title>
+    <!--Подключение шрифтов-->
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <!--CSS-файл-->
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/selectric.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--JS-файл-->
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+    <!-- <script src="owl.carousel.min.js"></script> -->
+    <!-- <script src="js/jquery.selectric.js"></script> -->
+    <!-- <script src="js/jquery-ui.min.js"></script> -->
+    <script src="js/script.js"></script>
+</head>
+<body>
+<!--Хэдэр-->
+<header>
+    <div class="container">
+        <div class="table full original">
+            <!--Левый блок-->
+            <div class="left tCell">
+                <a href="#" class="login">
+                <span class="icon-user">
+                </span>Войти в личный кабинет
+                </a>
+                <ul class="menu">
+                    <li><a href="#">Оптовикам</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">О мастерской</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <!--Логотип-->
+            <div class="logo tCell invisLink">
+                <img src="img/png/Logo.png" alt="logo">
+                <a href="#">Main</a>
+            </div>
+            <!--Правый блок-->
+            <div class="right tCell">
+                <a href="tel:89456488456" class="phone">
+                    <span class="icon-phone"></span>8 (945) 648-8-456
+                </a>
+                <a href="#" class="callback">Не дозвонились?</a>
+                <p class="timing"> Мы работаем пн-пт<br>10:00 - 19:00
+                </p>
+                <a href="#" class="basket" style="background-image: url(img/png/basket.png);">
+                    товаров <span>5</span> на сумму <span>2555&#8381;</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="adaptHeader">
+            <div class="burger"></div>
+            <!--<div class="adaptMenu">-->
+            <!--<label for="menu" ></label>-->
+            <!--<input type="checkbox" name="menu" id="menu">-->
+            <!--<ul>-->
+            <!--<li><a href="#">asdsad</a></li>-->
+            <!--<li><a href="#">sadas</a></li>-->
+            <!--<li><a href="#">sadasd</a></li>-->
+            <!--<li><a href="#">sadasd</a></li>-->
+            <!--<li><a href="#">sadasd</a></li>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="adapLtogo">-->
+            <!--<img src="img/png/logo_mobile.png" alt="logo">-->
+            <!--<a href="#">logo</a>-->
+            <!--</div>-->
+            <!--<div class="adaptBasket">-->
+            <!--<img src="img/png/basket_mobile.png" alt="basket">-->
+            <!--<a href="#">basket</a>-->
+            <!--</div>-->
+        </div>
+    </div>
+</header>
+<!--Контейнер-->
+<div class="container">
+    <!--Контент-->
+    <div class="content">
+        <!--Баннер-->
+        <div class="banner">
+            <!--Распродажа-->
+            <div class="sale" style="background-image: url(img/jpg/Sale.jpg)"></div>
+            <!--Слайдер-->
+            <div class="slider">
+                <div class="mainSlider">
+                    <div class="item" style="background-image: url(img/jpg/Slider.jpg)"></div>
+                </div>
+            </div>
+        </div>
+        <!--Преимущества-->
+        <div class="advSub cfix">
+            <!--Преимущества-->
+            <div class="advantages cfix">
+                <!-----1----->
+                <div class="item">
+                    <img src="img/png/adv_01.png" alt="">
+                    <span>Возврат<br>товара</span>
+                    <p>В течении 30 дней<br>без объяснения<br>причины</p>
+                </div>
+                <!-----2----->
+                <div class="item">
+                    <img src="img/png/adv_03.png" alt="">
+                    <span>Сервис<br>доставки</span>
+                    <p>По России,<br>Беларуси и<br>Казахстану</p>
+                </div>
+                <!-----3----->
+                <div class="item">
+                    <img src="img/png/adv_05.png" alt="">
+                    <span>Привезем<br>на выбор</span>
+                    <p>Закажи что<br>нравится и решай<br>при получении</p>
+                </div>
+                <!-----4----->
+                <div class="item">
+                    <img src="img/png/adv_07.png" alt="">
+                    <span>На любой<br>вкус</span>
+                    <p>Более 100<br>идей для выбора<br>подарка</p>
+                </div>
+            </div>
+            <!--Подписка-->
+            <div class="subScribe">
+                <!--Форма подписки-->
+                <form action="#">
+                    <label for="sub">Узнавайте о новинках первыми!</label>
+                    <input type="text" id="sub" placeholder="Введите ваш e-mail">
+                    <div class="wrap">
+                        <button id="send">Подписаться на рассылку</button>
+                        <span>Обещаем<br>НЕ спамить</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Каталог-->
+        <div class="catalog">
+            <!--Фильтр-->
+            <div class="filter cfix">
+                <ul>
+                    <li><a href="#">Все</a></li>
+                    <li><a href="#">Хиты</a></li>
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Распродажа</a></li>
+                    <li><a href="#">День рожедния</a></li>
+                    <li><a href="#">8 марта</a></li>
+                    <li><a href="#">Любимому</a></li>
+                    <li><a href="#">Любимой</a></li>
+                    <li><a href="#">Лучшему другу</a></li>
+                </ul>
+                <div class="view">
+                    <span class="icon-filter1"></span>
+                    <span class="icon-filter2"></span>
+                </div>
+            </div>
+            <!--Select-фильтр-->
+            <div class="selFilter cfix">
+                <select name="filter" id="filter">
+                    <option value="Все">Все</option>
+                    <option value="Хиты">Хиты</option>
+                    <option value="Новинки">Новинки</option>
+                    <option value="Распродажа">Распродажа</option>
+                    <option value="День рожедния">День рожедния</option>
+                    <option value="8 марта">8 марта</option>
+                    <option value="Любимому">Любимому</option>
+                    <option value="Любимой">Любимой</option>
+                    <option value="Лучшему другу">Лучшему другу</option>
+                </select>
+                <div class="view">
+                    <span class="icon-filter1"></span>
+                    <span class="icon-filter2"></span>
+                </div>
+            </div>
+            <!--Карточки-->
+            <div class="cards">
+                <!--1-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card1.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Экочеловек</span>
+                        <a href="#">«Танцор»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">690</span>550 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <!--2-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card2.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Экочеловек</span>
+                        <a href="#">«Коротыш»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">950</span>850 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <!--3-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card3.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Экочеловек</span>
+                        <a href="#">«Мечтатель в черном»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">1710</span>1500 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <span class="status hit">Хит</span>
+                </div>
+                <!--4-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card4.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Экочеловек</span>
+                        <a href="#">«Лентяй»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">610</span>590 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <span class="status discount">-10%</span>
+                </div>
+                <!--5-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card5.jpg)"></div>
+                    <div class="content">
+                        <a href="#">«Вулкан»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">690</span>550 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <!--6-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card6.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Набор</span>
+                        <a href="#">«Совушки»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">950</span>850 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <!--7-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card7.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Набор</span>
+                        <a href="#">«Три обезьянки»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">1710</span>1500 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <span class="status new">New</span>
+                </div>
+                <!--8-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card8.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Набор весенний</span>
+                        <a href="#">«Три сердца»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">610</span>590 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <!--9-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card9.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Экочеловек</span>
+                        <a href="#">«Танцор»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">690</span>550 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <!--10-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card10.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Экочеловек</span>
+                        <a href="#">«Малыш»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">950</span>850 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <!--11-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card11.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Экочеловек</span>
+                        <a href="#">«Мечтатель»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">1710</span>1500 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <!--12-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card12.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Экочеловек</span>
+                        <a href="#">«Йог»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">610</span>590 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <!--13-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card13.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Экочеловек</span>
+                        <a href="#">«Атлет»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">690</span>550 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <!--14-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card14.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Экочеловек</span>
+                        <a href="#">«Беременяша»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">950</span>850 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <!--15-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card15.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Экочеловек</span>
+                        <a href="#">«Романтик»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">1710</span>1500 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <!--16-->
+                <div class="card">
+                    <div class="thumbnail">
+                        <div class="pic active" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                        <div class="pic" style="background-image: url(img/jpg/card1.jpg);"></div>
+                    </div>
+                    <div class="img" style="background-image: url(img/jpg/card16.jpg)"></div>
+                    <div class="content">
+                        <span class="title">Экочеловек</span>
+                        <a href="#">«Русалка»</a>
+                        <div class="buy cfix">
+                            <span class="price"><span class="old">610</span>590 &#8381;</span>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--СоцСети-->
+        <div class="socials">
+            <h3>Мы в социальных сетях</h3>
+            <!--Обертка-->
+            <div class="wrap">
+                <div class="socialItem" style="background-image: url(img/jpg/soc1.jpg)"></div>
+                <div class="socialItem" style="background-image: url(img/jpg/soc2.jpg)"></div>
+                <div class="socialItem" style="background-image: url(img/jpg/soc3.jpg)"></div>
+            </div>
+        </div>
+        <!--Информация-->
+        <div class="info" id="tabs">
+            <ul class="tabs">
+                <li><a href="#tabs-1">Интернет-магазин керамических фигурок</a></li>
+                <li><a href="#tabs-2">Керамические фигурки</a></li>
+                <li><a href="#tabs-3">Подарки на новый год</a></li>
+                <li><a href="#tabs-4">Подарок на день рождения</a></li>
+            </ul>
+            <div class="content" id="tabs-1">
+                <div class="accordion">
+                    <span class="title active">Интернет магазин керамических фигурок — красота и удобство</span>
+                    <div>
+                        <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+                            оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+                            интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+                            магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+                            беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+                            впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+                            многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+                            декора интерьера.
+                        </p>
+                        <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+                            интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+                            гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+                            являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+                            настроением.
+                        </p>
+                        <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+                            оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+                            используются натуральные, качественные материалы, создающие идеальные условия для
+                            выращивания травы и различных цветов.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <span class="title">Интернет магазин керамических фигурок — сочетание простоты и удобства</span>
+                    <div>
+                        <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+                            оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+                            интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+                            магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+                            беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+                            впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+                            многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+                            декора интерьера.
+                        </p>
+                        <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+                            интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+                            гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+                            являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+                            настроением.
+                        </p>
+                        <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+                            оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+                            используются натуральные, качественные материалы, создающие идеальные условия для
+                            выращивания травы и различных цветов.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="tabs-2">
+                <div class="accordion">
+                    <span class="title active">Интернет магазин керамических фигурок — красота и удобство</span>
+                    <div>
+                        <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+                            оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+                            интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+                            магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+                            беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+                            впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+                            многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+                            декора интерьера.
+                        </p>
+                        <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+                            интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+                            гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+                            являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+                            настроением.
+                        </p>
+                        <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+                            оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+                            используются натуральные, качественные материалы, создающие идеальные условия для
+                            выращивания травы и различных цветов.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <span class="title">Интернет магазин керамических фигурок — сочетание простоты и удобства</span>
+                    <div>
+                        <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+                            оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+                            интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+                            магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+                            беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+                            впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+                            многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+                            декора интерьера.
+                        </p>
+                        <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+                            интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+                            гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+                            являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+                            настроением.
+                        </p>
+                        <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+                            оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+                            используются натуральные, качественные материалы, создающие идеальные условия для
+                            выращивания травы и различных цветов.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="tabs-3">
+                <div class="accordion">
+                    <span class="title active">Интернет магазин керамических фигурок — красота и удобство</span>
+                    <div>
+                        <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+                            оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+                            интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+                            магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+                            беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+                            впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+                            многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+                            декора интерьера.
+                        </p>
+                        <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+                            интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+                            гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+                            являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+                            настроением.
+                        </p>
+                        <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+                            оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+                            используются натуральные, качественные материалы, создающие идеальные условия для
+                            выращивания травы и различных цветов.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <span class="title">Интернет магазин керамических фигурок — сочетание простоты и удобства</span>
+                    <div>
+                        <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+                            оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+                            интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+                            магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+                            беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+                            впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+                            многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+                            декора интерьера.
+                        </p>
+                        <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+                            интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+                            гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+                            являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+                            настроением.
+                        </p>
+                        <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+                            оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+                            используются натуральные, качественные материалы, создающие идеальные условия для
+                            выращивания травы и различных цветов.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="tabs-4">
+                <div class="accordion">
+                    <span class="title active">Интернет магазин керамических фигурок — красота и удобство</span>
+                    <div>
+                        <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+                            оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+                            интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+                            магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+                            беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+                            впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+                            многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+                            декора интерьера.
+                        </p>
+                        <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+                            интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+                            гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+                            являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+                            настроением.
+                        </p>
+                        <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+                            оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+                            используются натуральные, качественные материалы, создающие идеальные условия для
+                            выращивания травы и различных цветов.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <span class="title">Интернет магазин керамических фигурок — сочетание простоты и удобства</span>
+                    <div>
+                        <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+                            оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+                            интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+                            магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+                            беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+                            впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+                            многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+                            декора интерьера.
+                        </p>
+                        <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+                            интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+                            гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+                            являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+                            настроением.
+                        </p>
+                        <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+                            оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+                            используются натуральные, качественные материалы, создающие идеальные условия для
+                            выращивания травы и различных цветов.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Футер-->
+<footer>
+    <div class=" container">
+        <!--Меню футера-->
+        <div class="cfix">
+            <ul class="footMenu cfix">
+                <li class="col">
+                    <ul>
+                        <li><a href="#">Оптовикам</a></li>
+                        <li><a href="#">Корпоративным клиентам </a></li>
+                        <li><a href="#">Войти в личный кабинет</a></li>
+                    </ul>
+                </li>
+                <li class="col">
+                    <ul>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">О мастерской</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--Контакты-->
+            <div class="contacts">
+                <a href="tel:89456488456">8 (945) 648-8-456</a>
+                <a href="mailto:ecocheloveki@gmail.com">ecocheloveki@gmail.com</a>
+                <span>пн-пт 10:00-19:00</span>
+                <div class="">
+                    <span>Ищите нас здесь</span>
+                    <div class="socLinks">
+                        <a href="#" class="icon-soc3"></a>
+                        <a href="#" class="icon-soc2"></a>
+                        <a href="#" class="icon-soc1"></a>
+                    </div>
+                </div>
+            </div>
+            <!--Копирайт-->
+            <div class="copyright">
+                <span>&#169; 2011-2014 Экочеловечки</span>
+                <span>Все права защищены</span>
+                <span>Все цены указаны в рублях</span>
+                <span>Разработка &#171;<a href="#">Биат</a>&#187;</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<button class="call"><span class="icon-phone"></span></button>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиентам</title>
+    <!--Подключение шрифтов-->
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <!--CSS-файл-->
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/selectric.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--JS-файл-->
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+    <!-- <script src="owl.carousel.min.js"></script> -->
+    <!-- <script src="js/jquery.selectric.js"></script> -->
+    <!-- <script src="js/jquery-ui.min.js"></script> -->
+    <script src="js/script.js"></script>
+</head>
+<body>
+<!--Шапка сайта-->
+<header>
+    <div class="container">
+        <div class="table full">
+            <!--Левый блок-->
+            <div class="left tCell">
+                <a href="#" class="login">
+                <span class="icon-user">
+                </span>Войти в личный кабинет
+                </a>
+                <ul class="menu">
+                    <li><a href="#">Оптовикам</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">О мастерской</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <!--Логотип-->
+            <div class="logo tCell invisLink">
+                <img src="img/png/Logo.png" alt="logo">
+                <a href="#">Main</a>
+            </div>
+            <!--Правый блок-->
+            <div class="right tCell">
+                <a href="tel:89456488456" class="phone">
+                    <span class="icon-phone"></span>8 (945) 648-8-456
+                </a>
+                <a href="#" class="callback">Не дозвонились?</a>
+                <p class="timing"> Мы работаем пн-пт<br>10:00 - 19:00
+                </p>
+                <a href="#" class="basket" style="background-image: url(img/png/basket.png);">
+                    товаров <span>5</span> на сумму <span>2555&#8381;</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Контейнер контента-->
+<div class="container">
+    <!--Контент-->
+    <div class="content">
+        <ul class="breadcrumbs">
+            <li><a href="#">Главная / </a></li>
+            <li><span>Корпоративным клиентам</span></li>
+        </ul>
+
+        <div class="clientWrap cfix">
+            <!--Лево-->
+            <div class="left">
+                <p>Для расчета заказа заполните форму ниже,
+                    или позвоните нам 8 (495) 648-8-456
+                </p>
+
+                <!--Основная форма-->
+                <div class="formClientWrap">
+                    <form action="#">
+                    <!--Название организации-->
+                    <div>
+                        <label class="labelFormClient" for="orgName">Название организации</label>
+                        <input class="widthClientForm heigthClientForm bordOrd" type="text" name="orgName" id="orgName">
+                    </div>
+                    <!--Конт. лицо-->
+                    <div>
+                        <label class="labelFormClient" for="contact">Контактное лицо</label>
+                        <input class="widthClientForm heigthClientForm bordOrd" type="text" name="contact" id="contact">
+                    </div>
+                    <!--Номер телефона-->
+                    <div>
+                        <label class="labelFormClient" for="phoneNum">Номер телефона</label>
+                        <input class="widthClientForm heigthClientForm bordOrd" type="text" name="phoneNum" id="phoneNum">
+                    </div>
+                    <!--Нанесение логотипа-->
+                    <div class="addLogo cfix">
+                        <div class="leftLogo">
+                            <span class="writeLogo">Нанесение логотипа</span>
+                            <span class="signature">занимает 20 рабочих дней</span>
+                        </div>
+                        <ul class="rightLogo cfix">
+                            <li>
+                                <input class="radioBtn"  type="radio" name="logoOn" id="logoOn1" checked>
+                                <label for="logoOn1">Да</label>
+
+                            </li>
+                            <li>
+                                <input class="radioBtn"  type="radio" name="logoOn" id="logoOn2">
+                                <label for="logoOn2">Нет</label>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Выбрать файл-------------------->
+                    <div class="addFile">
+                        <input type="file" name="addLogo" id="addLogo">
+                        <label for="addLogo">Прикрепите логотип</label>
+                        <!--Добавил тип файла как span-->
+                        <span class="signature">.cdr, .ai, .eps, .tiff</span>
+                    </div>
+                    <!--Сколько-->
+                    <div class="howMany">
+                        <label class="labelFormClient" for="howMuch">Количество фигурок</label>
+                        <select class="heightClientForm bordOrd howMuch" name="howMuch" id="howMuch">
+                            <option value="150">150</option>
+                        </select>
+                    </div>
+                    <!--Дата-->
+                    <div class="date">
+                        <label class="labelFormClient" for="date">Подготовить заказ к</label>
+                        <!--Стилизовать дату-->
+                        <div>
+                            <input class="heightClientForm bordOrd" type="date" name="date" id="date">
+                            <img src="img/png/calendar.png" alt="date">
+                        </div>
+                    </div>
+                    <!--Доп информация-->
+                    <div class="addInf">
+                        <label class="labelFormClient" for="moreInfo">Дополнительная информация</label>
+                        <textarea class="widthClientForm bordOrd" name="moreInfo" id="moreInfo"></textarea>
+                    </div>
+
+                    <button>Отправить</button>
+                </form>
+                </div>
+            </div>
+
+            <!--Право-->
+            <div class="right">
+                <div>
+                    <h3>Свежий подарок</h3>
+                    <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь стильный и
+                        лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте,
+                        а нанесение логотипа вашей компании еще раз подчеркнет положительный образ в глазах клиента.
+                    </p>
+                    <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и
+                        подготовят ваш логотип для нанесения на фигурку.
+                    </p>
+                </div>
+                <div>
+                    <h3>Разные образы</h3>
+                    <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь стильный и
+                        лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте,
+                        а нанесение логотипа вашей компании еще раз подчеркнет положительный образ в глазах клиента.
+                    </p>
+                    <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и
+                        подготовят ваш логотип для нанесения на фигурку.
+                    </p>
+                </div>
+                <div>
+                    <h3>Фигурки на заказ</h3>
+                    <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь стильный и
+                        лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте,
+                        а нанесение логотипа вашей компании еще раз подчеркнет положительный образ в глазах клиента.
+                    </p>
+                    <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и
+                        подготовят ваш логотип для нанесения на фигурку.
+                    </p>
+                </div>
+
+                <button>Скачать презентацию</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Футер-->
+<footer>
+    <div class=" container">
+        <!--Меню футера-->
+        <div class="cfix">
+            <ul class="footMenu cfix">
+                <li class="col">
+                    <ul>
+                        <li><a href="#">Оптовикам</a></li>
+                        <li><a href="#">Корпоративным клиентам </a></li>
+                        <li><a href="#">Войти в личный кабинет</a></li>
+                    </ul>
+                </li>
+                <li class="col">
+                    <ul>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">О мастерской</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--Контакты-->
+            <div class="contacts">
+                <a href="tel:89456488456">8 (945) 648-8-456</a>
+                <a href="mailto:ecocheloveki@gmail.com">ecocheloveki@gmail.com</a>
+                <span>пн-пт 10:00-19:00</span>
+                <div>
+                    <span>Ищите нас здесь</span>
+                    <a href="#" class="icon-soc3"></a>
+                    <a href="#" class="icon-soc2"></a>
+                    <a href="#" class="icon-soc1"></a>
+                </div>
+            </div>
+            <!--Копирайт-->
+            <div class="copyright">
+                <span>&#169; 2011-2014 Экочеловечки</span>
+                <span>Все права защищены</span>
+                <span>Все цены указаны в рублях</span>
+                <span>Разработка &#171;<a href="#">Биат</a>&#187;</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
