@@ -729,15 +729,20 @@ info .tabs li a:hover {
 .info .title:before {
     content: "";
     display: block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
     width: 0px;
     height: 0px;
     border-top: 5px solid #333333;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    margin-top: -3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    /*margin-top: -3px;*/
 }
 
 .info .title.active::before {
@@ -819,14 +824,15 @@ footer a:hover {
     border: none;
     background-color: #64ba4a;
     position: fixed;
-    right: 150px;
-    bottom: 200px;
+    right: 10px;
+    bottom: 10px;
     border-radius: 50px;
+    border: 2px solid #ffffff;
 }
 
 .call [class*="icon"] {
     font-size: 25px;
-    line-height: 50px;
+    line-height: 46px;
     color: #ffffff;
 }
 
@@ -1667,6 +1673,42 @@ header.mobile {
     background-color: #259b43;
     border: none;
     outline: none;
+}
+
+/*кнопка вверх*/
+.up {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #64ba4a;
+}
+.up:hover {
+    border: 2px solid #64ba4a;
+    background-color: #ffffff;
+}
+.up span {
+    border-bottom: 18px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    background-color: transparent;
+    /*-webkit-transform: rotate(180deg);*/
+    /*-moz-transform: rotate(180deg);*/
+    /*-ms-transform: rotate(180deg);*/
+    /*-o-transform: rotate(180deg);*/
+    /*transform: rotate(180deg);*/
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+}
+
+.up:hover span{
+    border-bottom: 18px solid #64ba4a;
 }
 
 /*адаптив*/
