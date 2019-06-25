@@ -259,6 +259,29 @@ header .phone [class*="icon"] {
     background-repeat: no-repeat;
 }
 
+.dots {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    z-index: 1;
+}
+.dots button {
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+.dots button + button {
+    margin-left: 12px;
+}
+
+.dots button.active {
+    opacity: 1;
+}
+
 #customDots {
     position: absolute;
     bottom: 10px;
@@ -1343,6 +1366,54 @@ h3News {
     display: block;
 }
 
+.selectBl {
+    width: 290px;
+}
+.selectBl .selectric {
+    width: 100%;
+    height: 28px;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+}
+.selectBl .selectric .label {
+    font-size: 13px;
+    line-height: 26px;
+    color: #333333;
+}
+.selectBl .selectric .button {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid #00a48c;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    margin-top: -2px;
+    background-color: transparent;
+}
+
+.selectBl .selectric .button::after {
+    display: none;
+}
+
+.selectBl .selectric-items {
+    border: 1px solid #d6d6d6;
+}
+
+.selectBl .selectric-items li {
+    padding: 0;
+    padding-left: 10px;
+    font-size: 13px;
+    line-height: 26px;
+    color: #333333;
+    background-color: #fff;
+}
+
+.selectBl .selectric-items li:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
 /*Красные звезды*/
 .starLabel {
     font-size: 13px;
@@ -1637,6 +1708,7 @@ header.mobile {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: none;
 }
 
 .mobileSub {
